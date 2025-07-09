@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Frontend Developer",
+    "company": "BURNR",
+    "date": "2025 - Now",
+    "location": "Remote",
+    "note": "A Developer who is responsible for building admin UI of fitness oriented social media app BURNR.",
+    "bullets": [
+      "Part of a small team in building a robust platform.",
+      "Developing functionalities, displaying data with React Query and appealing UI of the admin panel with Daisy UI and Tailwind CSS",
+      "Collaborating with the leading software engineer to deepen knowledge of programming and expand my skillset."
+    ],
+    "tools": [
+      "NextJS",
+      "TypeScript",
+      "React",
+      "React Query",
+      "Tailwind CSS",
+      "Daisy UI",
+      "JavaScript"
+    ]
+  },
+  {
+    "title": "Frontend Developer/Designer Intern",
+    "company": "lablab.ai / lablabNext",
+    "date": "2025 January - 2025 February",
+    "location": "Remote",
+    "note": "A Developer-UI/UX Designer who is responsible for designing the brand's homepage",
+    "bullets": [
+      "Created a high quality homepage design in Figma that reflected the brand`s identity and improved user experience, setting a strong visual direction for the website.",
+      "Collaborated with brand's the product manager to bring the best design reflecting its identity and tone."
+    ],
+    "tools": ["Figma"]
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "Globy AI",
+    "date": "2024 January - 2025 May",
+    "location": "Remote",
+    "note": "A Frontend Developer who is responsible for developing user-friendly, responsive and high-quality websites",
+    "bullets": [
+      "Built responsive, user-friendly websites with a strong focus on design and detail, played a key role in shaping the product.",
+      "Lead a team of interns, which improved my leadership and mentoring skills.",
+      "Close collaboration with teams, which strengthened my communication and project coordination."
+    ],
+    "tools": ["HTML", "CSS", "JavaScript", "React", "WordPress"]
+  }
+]
