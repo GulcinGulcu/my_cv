@@ -1,26 +1,30 @@
-import { PDFViewer } from '@react-pdf/renderer';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
+import { PDFViewer } from "@react-pdf/renderer";
+import "../fonts";
+import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
+import Header from "./components/header";
 
 const styles = StyleSheet.create({
   page: {
-    flexDirection: 'row',
-    backgroundColor: '#ffffff'
+    backgroundColor: "#ffffff",
   },
   section: {
     margin: 10,
     padding: 10,
-    flexGrow: 1
-  }
+    flexGrow: 1,
+  },
 });
 
 const MyDocument = () => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text>Section #1</Text>
-      </View>
-      <View style={styles.section}>
-        <Text>Section #2</Text>
+      <Header />
+      <View>
+        <View style={styles.section}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.section}>
+          <Text>Section #2</Text>
+        </View>
       </View>
     </Page>
   </Document>
