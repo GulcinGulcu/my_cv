@@ -5,9 +5,8 @@ import LaptopImage from "../../assets/computer.png";
 const styles = StyleSheet.create({
   header: {
     padding: "25 20 25 20",
-    fontFamily: "Inter",
     fontWeight: "thin",
-    backgroundColor: "#a98467",
+    backgroundColor: "#333533",
     color: "#fffcf2",
     display: "flex",
     flexDirection: "row",

@@ -6,7 +6,7 @@ import Header from "./components/header";
 import Body from "./components/body";
 
 const MyDocument = () => (
-  <Document>
+  <Document style={{ fontFamily: "Inter" }}>
     <Page size="A4">
       <Header />
       <View style={{ flexGrow: 1 }}>

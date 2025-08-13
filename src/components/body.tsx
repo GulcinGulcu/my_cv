@@ -1,13 +1,70 @@
 import { View, Text, StyleSheet } from "@react-pdf/renderer";
+import {
+  SectionHeader,
+  Section,
+  SectionBody,
+  SectionSubHeader,
+} from "./sections";
+import skills from "../../assets/skills.json";
+import experiences from "../../assets/experiences.json";
+import FeatureBox from "./featureBox";
 
 function Body() {
   return (
     <View style={styles.main}>
       <View style={styles.sectionLeft}>
-        <Text>Section #1</Text>
+        <Section>
+          <SectionHeader>
+            <Text>General Information</Text>
+          </SectionHeader>
+          <SectionBody>
+            <Text>
+              Frontend Developer with a strong focus on building responsive,
+              accessible, and visually engaging web experiences. Skilled in
+              HTML, CSS, JavaScript, and modern libraries like{" "}
+              <Text style={{ fontWeight: "bold" }}>ReactJS / NextJS</Text>, with
+              hands-on experience turning design concepts into clean, functional
+              code.
+            </Text>
+          </SectionBody>
+        </Section>
+        <Section>
+          <SectionHeader>
+            <Text>Experience</Text>
+          </SectionHeader>
+          <SectionBody style={{ flexDirection: "column", gap: 10 }}>
+            {experiences.map((experience, i) => (
+              <View key={i} style={{ gap: 4 }}>
+                <SectionSubHeader>
+                  <Text>
+                    {experience.title} / {experience.company}
+                  </Text>
+                </SectionSubHeader>
+                <Text style={{ fontStyle: "italic" }}>{experience.date}</Text>
+                <Text>{experience.note}</Text>
+              </View>
+            ))}
+          </SectionBody>
+        </Section>
       </View>
       <View style={styles.sectionRight}>
-        <Text>Section #2</Text>
+        <Section>
+          <SectionHeader>
+            <Text>Technical Skills</Text>
+          </SectionHeader>
+          <SectionBody
+            style={{ flexDirection: "row", flexWrap: "wrap", gap: 5 }}
+          >
+            {skills.map((skill) => (
+              <FeatureBox key={skill} skill={skill}></FeatureBox>
+            ))}
+          </SectionBody>
+        </Section>
+        <Section>
+          <SectionHeader>
+            <Text>Languages</Text>
+          </SectionHeader>
+        </Section>
       </View>
     </View>
   );
@@ -18,15 +75,18 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     height: "100%",
-    backgroundColor: "#edede9",
+    backgroundColor: "#f7ede2",
   },
   sectionLeft: {
-   width: "60%",
-   border: "1px solid black",
+    width: "60%",
+    padding: "14 14 14 20",
+    gap: 15,
   },
   sectionRight: {
-   width: "40%",
-   border: "1px solid black",
+    width: "40%",
+    backgroundColor: "#d6ccc2",
+    padding: "14 20 14 14",
+    gap: 15,
   },
 });
 
