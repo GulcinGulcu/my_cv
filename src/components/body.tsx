@@ -6,8 +6,8 @@ import {
   SectionSubHeader,
 } from "./sections";
 import skills from "../../assets/skills.json";
-import experiences from "../../assets/experiences.json";
-import FeatureBox from "./featureBox";
+import experiences from "../../assets/experience.json";
+import { Badge } from "./Badge";
 
 function Body() {
   return (
@@ -56,7 +56,7 @@ function Body() {
             style={{ flexDirection: "row", flexWrap: "wrap", gap: 5 }}
           >
             {skills.map((skill) => (
-              <FeatureBox key={skill} skill={skill}></FeatureBox>
+              <Badge key={skill} skill={skill}></Badge>
             ))}
           </SectionBody>
         </Section>

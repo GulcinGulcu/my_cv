@@ -6,7 +6,8 @@
     "React",
     "NextJS",
     "NodeJS",
-    "APIs",
+    "Redux",
+    "WordPress",
     "React Query",
     "MongoDB",
     "Context API",
@@ -14,6 +15,5 @@
     "Material UI",
     "Figma",
     "Automated Testing",
-    "WordPress",
-    "Redux"
+    "APIs"
 ]
