@@ -6,7 +6,6 @@ import {
   SectionSubHeader,
 } from "./sections";
 import skills from "../../assets/skills.json";
-import experiences from "../../assets/experience.json";
 import { Badge } from "./Badge";
 
 function Body() {
@@ -30,21 +29,8 @@ function Body() {
         </Section>
         <Section>
           <SectionHeader>
-            <Text>Experience</Text>
+            <Text>Projects</Text>
           </SectionHeader>
-          <SectionBody style={{ flexDirection: "column", gap: 10 }}>
-            {experiences.map((experience, i) => (
-              <View key={i} style={{ gap: 4 }}>
-                <SectionSubHeader>
-                  <Text>
-                    {experience.title} / {experience.company}
-                  </Text>
-                </SectionSubHeader>
-                <Text style={{ fontStyle: "italic" }}>{experience.date}</Text>
-                <Text>{experience.note}</Text>
-              </View>
-            ))}
-          </SectionBody>
         </Section>
       </View>
       <View style={styles.sectionRight}>
@@ -64,6 +50,52 @@ function Body() {
           <SectionHeader>
             <Text>Languages</Text>
           </SectionHeader>
+          <SectionBody>
+            <Text>
+              Advanced level <Text style={{ fontWeight: "bold" }}>English</Text>
+              , native in <Text style={{ fontWeight: "bold" }}>Turkish</Text>,
+            </Text>
+            <Text>
+              conversational level{" "}
+              <Text style={{ fontWeight: "bold" }}>Swedish</Text>.
+            </Text>
+          </SectionBody>
+        </Section>
+        <Section>
+          <SectionHeader>
+            <Text>Education</Text>
+          </SectionHeader>
+          <SectionBody style={{ flexDirection: "column", gap: 15 }}>
+            <View style={{ gap: 6 }}>
+              <SectionSubHeader>
+                <Text style={{ fontSize: 11 }}>
+                  Frontend Development Program, Code2Career Bootcamp
+                </Text>
+              </SectionSubHeader>
+              <Text style={{ fontStyle: "italic" }}>
+                Sweden, 2023 January - 2024 February
+              </Text>
+              <Text>
+                Intensive, project-based program covering HTML, CSS, JavaScript,
+                React, and responsive design. Completed real-world projects,
+                collaborated in agile teams, and built a portfolio showcasing
+                clean, maintainable code.
+              </Text>
+            </View>
+            <View style={{ gap: 6 }}>
+              <SectionSubHeader>
+                <Text style={{ fontSize: 11 }}>
+                  Bachelor's Degree In Teacher Training, Anadolu University
+                </Text>
+              </SectionSubHeader>
+              <Text style={{ fontStyle: "italic" }}>Turkiye</Text>
+            </View>
+          </SectionBody>
+        </Section>
+        <Section>
+          <SectionHeader>
+            <Text>References</Text>
+          </SectionHeader>
         </Section>
       </View>
     </View>
@@ -79,14 +111,14 @@ const styles = StyleSheet.create({
   },
   sectionLeft: {
     width: "60%",
-    padding: "14 14 14 20",
-    gap: 15,
+    padding: "20 20 20 30",
+    gap: 20,
   },
   sectionRight: {
     width: "40%",
     backgroundColor: "#d6ccc2",
-    padding: "14 20 14 14",
-    gap: 15,
+    padding: "20 30 20 20",
+    gap: 20,
   },
 });
 

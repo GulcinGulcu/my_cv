@@ -7,7 +7,7 @@
     "note": "A Developer who is responsible for building admin UI of fitness oriented social media app BURNR.",
     "bullets": [
       "Part of a small team in building a robust platform.",
-      "Developing functionalities, displaying data with React Query and appealing UI of the admin panel with Daisy UI and Tailwind CSS",
+      "Developing functionalities, displaying data with React Query and appealing UI of the admin panel with Daisy UI and Tailwind CSS.",
       "Collaborating with the leading software engineer to deepen knowledge of programming and expand my skillset."
     ],
     "tools": [
@@ -17,7 +17,9 @@
       "React Query",
       "Tailwind CSS",
       "Daisy UI",
-      "JavaScript"
+      "JavaScript",
+      "Git",
+      "Github"
     ]
   },
   {
@@ -36,13 +38,33 @@
   {
     "title": "Frontend Developer Intern",
     "company": "lablab.ai",
-    "date": "2025 January - 2025 February",
+    "date": "2024 June - 2024 July",
     "location": "Remote",
     "note": "A Developer-UI/UX Designer who is responsible for designing the brand's homepage.",
     "bullets": [
       "Created a high quality homepage design in Figma that reflected the brand`s identity and improved user experience, setting a strong visual direction for the website.",
       "Collaborated with brand's the product manager to bring the best design reflecting its identity and tone."
     ],
-    "tools": ["Figma"]
+    "tools": ["Figma", "Notion", "Builder.io"]
+  },
+  {
+    "title": "Teacher",
+    "company": "Ministry of National Education of Rebublic of Turkiye",
+    "date": "2017 - 2022",
+    "location": "On-Site",
+    "note": "Teacher",
+    "bullets": [
+      "Managed multiple projects under tight deadlines, honing time management crucial for software delivery cycles.",
+      "Provided personalized feedback, mirroring code review and mentoring practices in dev teams.",
+      "Led diverse classrooms, fostering collaboration and empathy, key for cross-functional teamwork in agile development environments."
+    ],
+    "tools": [
+      "Effective communication",
+      "Leading",
+      "Mentoring",
+      "Time Management",
+      "Collaboration",
+      "Project Management"
+    ]
   }
 ]

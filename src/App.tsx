@@ -2,7 +2,7 @@ import { PDFViewer } from "@react-pdf/renderer";
 import "../fonts";
 import { Page, View, Document } from "@react-pdf/renderer";
 import Header from "./components/header";
-
+import { SecondPage } from "./components/SecondPage";
 import Body from "./components/body";
 
 const MyDocument = () => (
@@ -12,6 +12,9 @@ const MyDocument = () => (
       <View style={{ flexGrow: 1 }}>
         <Body />
       </View>
+    </Page>
+    <Page size="A4">
+      <SecondPage />
     </Page>
   </Document>
 );
