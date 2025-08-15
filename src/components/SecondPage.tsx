@@ -27,7 +27,7 @@ export function SecondPage() {
             <View key={i} style={{ gap: 4 }}>
               <SectionSubHeader>
                 <Text>
-                  {experience.title} / {experience.company}
+                  {experience.title} — {experience.company}
                 </Text>
               </SectionSubHeader>
               <Text style={{ fontStyle: "italic" }}>{experience.date}</Text>

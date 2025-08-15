@@ -1,6 +1,58 @@
 import { View, Text, Image, Link } from "@react-pdf/renderer";
 import { StyleSheet } from "@react-pdf/renderer";
 import LaptopImage from "../../assets/computer.png";
+import CoffeeIconPdf from './../icons/CoffeeIconPdf';
+
+
+function Header() {
+  return (
+    <View style={styles.header}>
+      <View style={styles.titleSection}>
+        <Text style={styles.textName}>GULCIN GULCU</Text>
+        <Text style={styles.textTitle}>Frontend Developer</Text>
+        <View
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: 20,
+          }}
+        >
+          <Link
+            src="https://portfolio-eta-lyart-79.vercel.app/"
+            style={styles.textLink}
+          >
+            https://portfolio-eta-lyart-79.vercel.app/
+          </Link>
+          <View
+            style={{
+              backgroundColor: "#fffcf2",
+              height: 0.5,
+              alignSelf: "center",
+              flexGrow: 1,
+              marginRight: 20,
+              opacity: 0.5,
+            }}
+          ></View>
+        </View>
+      </View>
+      <View style={styles.titleSectionRight}>
+        <CoffeeIconPdf size={20} color="#fffcf2" />
+        <Text style={styles.textLocation}>Västerås, Sweden</Text>
+        <View>
+          <Link src="mailto:gulcin_375@hotmail.com" style={styles.textLink}>
+            gulcin_375@hotmail.com
+          </Link>
+        </View>
+        <View>
+          <Link src="https://github.com/GulcinGulcu" style={styles.textLink}>
+            https://github.com/GulcinGulcu
+          </Link>
+        </View>
+      </View>
+    </View>
+  );
+}
 
 const styles = StyleSheet.create({
   header: {
@@ -51,55 +103,5 @@ const styles = StyleSheet.create({
     height: 30,
   },
 });
-
-function Header() {
-  return (
-    <View style={styles.header}>
-      <View style={styles.titleSection}>
-        <Text style={styles.textName}>GULCIN GULCU</Text>
-        <Text style={styles.textTitle}>Frontend Developer</Text>
-        <View
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            gap: 20
-          }}
-        >
-          <Link
-            src="https://portfolio-eta-lyart-79.vercel.app/"
-            style={styles.textLink}
-          >
-            https://portfolio-eta-lyart-79.vercel.app/
-          </Link>
-          <View
-            style={{
-              backgroundColor: "#fffcf2",
-              height: 0.5,
-              alignSelf: "center",
-              flexGrow: 1,
-              marginRight: 20,
-              opacity: 0.5,
-            }}
-          ></View>
-        </View>
-      </View>
-      <View style={styles.titleSectionRight}>
-        <Image src={LaptopImage} style={styles.image} />
-        <Text style={styles.textLocation}>Västerås, Sweden</Text>
-        <View>
-          <Link src="mailto:gulcin_375@hotmail.com" style={styles.textLink}>
-            gulcin_375@hotmail.com
-          </Link>
-        </View>
-        <View>
-          <Link src="https://github.com/GulcinGulcu" style={styles.textLink}>
-            https://github.com/GulcinGulcu
-          </Link>
-        </View>
-      </View>
-    </View>
-  );
-}
 
 export default Header;

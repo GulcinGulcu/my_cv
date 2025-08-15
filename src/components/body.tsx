@@ -6,7 +6,12 @@ import {
   SectionSubHeader,
 } from "./sections";
 import skills from "../../assets/skills.json";
+import projects from "../../assets/projects.json";
+import references from "../../assets/references.json";
 import { Badge } from "./Badge";
+import { BulletListItem } from "./BulletListItem";
+import { Link } from "@react-pdf/renderer";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 
 function Body() {
   return (
@@ -31,6 +36,48 @@ function Body() {
           <SectionHeader>
             <Text>Projects</Text>
           </SectionHeader>
+          <SectionBody style={{ flexDirection: "column", gap: 30 }}>
+            {projects.map((project, i) => (
+              <View key={i} style={{ gap: 4 }}>
+                <SectionSubHeader>
+                  <Link
+                    src={project.link}
+                    style={{
+                      color: "inherit",
+                      flexDirection: "row",
+                      gap: 3,
+                      alignItems: "center",
+                    }}
+                  >
+                    <Text>{project.title}</Text>
+                    <ExternalLinkIcon size={15} />
+                  </Link>
+                </SectionSubHeader>
+                <Text>{project.description}</Text>
+                {project.bullets.map((text, i) => (
+                  <BulletListItem key={i} text={text} />
+                ))}
+              </View>
+            ))}
+          </SectionBody>
+        </Section>
+        <Section>
+          <SectionBody>
+            <Link
+              src="https://portfolio-eta-lyart-79.vercel.app/"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+                fontSize: 9,
+                marginTop: 7
+              }}
+            >
+              {" "}
+              <Text>
+                Explore more → https://portfolio-eta-lyart-79.vercel.app/
+              </Text>
+            </Link>
+          </SectionBody>
         </Section>
       </View>
       <View style={styles.sectionRight}>
@@ -96,6 +143,32 @@ function Body() {
           <SectionHeader>
             <Text>References</Text>
           </SectionHeader>
+          <SectionBody>
+            {references.map((reference) => (
+              <View style={{ marginBottom: 10 }}>
+                <Text style={{ fontWeight: "bold" }}>
+                  {reference.name} , {reference.title}
+                </Text>
+                <Text>{reference.note}</Text>
+              </View>
+            ))}
+            <Link
+              src="https://drive.google.com/drive/folders/13GSq3RQpEgu8heIiTlmEhClYkZ9WX6Jl?usp=drive_link"
+              style={{
+                color: "inherit",
+                flexDirection: "row",
+                gap: 3,
+                alignItems: "center",
+                marginBottom: 4,
+              }}
+            >
+              <Text>Reference Letter</Text>
+              <ExternalLinkIcon size={10} />
+            </Link>
+            <Text style={{ fontSize: 9, marginTop: 3 }}>
+              Further information will be provided when requested.
+            </Text>
+          </SectionBody>
         </Section>
       </View>
     </View>

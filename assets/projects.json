@@ -1,1 +1,33 @@
-
+[
+  {
+    "title": "Teacher's App",
+    "link": "teachers-app-flax.vercel.app",
+    "description": "A platform built primarily in TypeScript and NextJS.",
+    "bullets": [
+      "Developed a dynamic web platform enabling teachers to manage classrooms, share announcements, assign homework, and access student details.",
+      "Implemented an interactive dashboard that updates in real time with reports on teacher activities and actions.",
+      "Integrated an instant whiteboard feature for live teaching and collaboration.",
+      "Managed global application state using Redux and Redux Toolkit; designed authentication flows with Material UI.",
+      "Connected to the YouTube API to fetch and display lesson videos seamlessly."
+    ]
+  },
+  {
+    "title": "Admin Panel — BURNR",
+    "link": "https://drive.google.com/drive/folders/1VFnZCH_QNZQPuz0z4NgoYMN5JG-HSkXX?usp=drive_link",
+    "description": "Private repository - screenshots of the admin panel are available at the provided link. A platform built primarily in TypeScript and React.",
+    "bullets": [
+      "Developed an admin dashboard with robust features including authentication, user search, and detailed user profile views.",
+      "Implemented data fetching and caching for user details using React Query, improving load times and reducing redundant requests.",
+      "Designed an attractive and accessible UI using Tailwind CSS, Daisy UI and Radix UI, enhancing the overall user experience."
+    ]
+  },
+  {
+    "title": "HomePage Design",
+    "link": "https://www.figma.com/proto/ANqeOrf9XYEpI1AMwFhh4h/LablabNext?node-id=3-5&t=6zIfdLRJNcHBMQAP-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    "description": "A high quality home page design in Figma.",
+    "bullets": [
+      "A high quality homepage design in Figma that reflected the brand's identity and setting a strong visual direction for the website.",
+      "Applied cohesive typography, color schemes, and layout principles to ensure a polished and professional aesthetic."
+    ]
+  }
+]
