@@ -1,6 +1,5 @@
-import { View, Text, Image, Link } from "@react-pdf/renderer";
+import { View, Text, Link } from "@react-pdf/renderer";
 import { StyleSheet } from "@react-pdf/renderer";
-import LaptopImage from "../../assets/computer.png";
 import CoffeeIconPdf from './../icons/CoffeeIconPdf';
 
 
