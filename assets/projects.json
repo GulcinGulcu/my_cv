@@ -2,7 +2,7 @@
   {
     "title": "Teacher's App",
     "link": "teachers-app-flax.vercel.app",
-    "description": "A platform built primarily in TypeScript and NextJS.",
+    "description": "A platform built primarily in TypeScript and React.",
     "bullets": [
       "Developed a dynamic web platform enabling teachers to manage classrooms, share announcements, assign homework, and access student details.",
       "Implemented an interactive dashboard that updates in real time with reports on teacher activities and actions.",
@@ -14,7 +14,7 @@
   {
     "title": "Admin Panel — BURNR",
     "link": "https://drive.google.com/drive/folders/1VFnZCH_QNZQPuz0z4NgoYMN5JG-HSkXX?usp=drive_link",
-    "description": "Private repository - screenshots of the admin panel are available at the provided link. A platform built primarily in TypeScript and React.",
+    "description": "Private repository - screenshots of the admin panel are available at the provided link. A panel built primarily in TypeScript and NextJS.",
     "bullets": [
       "Developed an admin dashboard with robust features including authentication, user search, and detailed user profile views.",
       "Implemented data fetching and caching for user details using React Query, improving load times and reducing redundant requests.",

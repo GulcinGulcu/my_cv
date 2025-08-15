@@ -1,7 +1,7 @@
 import { View, Text, Link } from "@react-pdf/renderer";
 import { StyleSheet } from "@react-pdf/renderer";
-import CoffeeIconPdf from './../icons/CoffeeIconPdf';
-
+import CoffeeIconPdf from "./../icons/CoffeeIconPdf";
+import ExternalLinkIcon from "../icons/ExternalLinkIcon";
 
 function Header() {
   return (
@@ -37,6 +37,19 @@ function Header() {
       </View>
       <View style={styles.titleSectionRight}>
         <CoffeeIconPdf size={20} color="#fffcf2" />
+        <Link
+          src="https://www.linkedin.com/in/gulcin-gulcu-07a668178/"
+          style={{
+                color: "#fffcf2",
+                fontSize: 10,
+                flexDirection: "row",
+                gap: 3,
+                alignItems: "center",
+              }}
+        >
+          <Text>LinkedIn</Text>
+          <ExternalLinkIcon size={9} color="#fffcf2" />
+        </Link>
         <Text style={styles.textLocation}>Västerås, Sweden</Text>
         <View>
           <Link src="mailto:gulcin_375@hotmail.com" style={styles.textLink}>
