@@ -8,6 +8,7 @@ import {
 import experiences from "../../assets/experience.json";
 import { BulletListItem } from "./BulletListItem";
 import { Badge } from "./Badge";
+import { Keywords } from "./keywords";
 
 export function SecondPage() {
   return (
@@ -54,6 +55,7 @@ export function SecondPage() {
             </View>
           ))}
         </SectionBody>
+        <Keywords />
       </Section>
     </View>
   );
