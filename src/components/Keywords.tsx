@@ -1,5 +1,5 @@
 import { View, Text } from "@react-pdf/renderer";
-import keywords from "../../assets/keywords.json";
+import keywords from "../../assets/ats_keywords.json";
 
 export function Keywords() {
   const atsKeywords = keywords.join(", ");
