@@ -8,7 +8,7 @@ import {
 import experiences from "../../assets/experience.json";
 import { BulletListItem } from "./BulletListItem";
 import { Badge } from "./Badge";
-import { Keywords } from "./keywords";
+import { Keywords } from "./Keywords";
 
 export function SecondPage() {
   return (
