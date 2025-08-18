@@ -2,7 +2,7 @@ import { View, Text } from "@react-pdf/renderer";
 import keywords from "../../assets/keywords.json";
 
 export function Keywords() {
-  const atsKeywords = keywords.join(",");
+  const atsKeywords = keywords.join(", ");
   return (
     <View
       style={{
