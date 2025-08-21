@@ -23,20 +23,16 @@ function Body() {
           </SectionHeader>
           <SectionBody>
             <Text>
-              Frontend Developer with a strong focus on building responsive,
-              accessible, and visually engaging web experiences. Skilled in
-              HTML, CSS, JavaScript, and modern libraries like{" "}
-              <Text style={{ fontWeight: "bold" }}>ReactJS / NextJS</Text>, with
-              hands-on experience turning design concepts into clean, functional
-              code.
+              Fullstack Developer with a frontend focus, skilled in <Text style={{ fontWeight: "bold" }}>React.js</Text> / <Text style={{ fontWeight: "bold" }}>Next.js</Text> and building modern, user-friendly interfaces. Experienced with <Text style={{ fontWeight: "bold" }}>Node.js</Text> and <Text style={{ fontWeight: "bold" }}>Express</Text> for backend development, delivering scalable APIs and robust architectures.
             </Text>
+            <Text style={{ fontSize: 9, marginTop: 4}}>→ Fun fact: This CV is also coded with React/PDF renderer.</Text>
           </SectionBody>
         </Section>
         <Section>
           <SectionHeader>
             <Text>Projects</Text>
           </SectionHeader>
-          <SectionBody style={{ flexDirection: "column", gap: 30 }}>
+          <SectionBody style={{ flexDirection: "column", gap: 16 }}>
             {projects.map((project, i) => (
               <View key={i} style={{ gap: 4 }}>
                 <SectionSubHeader>
@@ -69,7 +65,7 @@ function Body() {
                 color: "inherit",
                 textDecoration: "none",
                 fontSize: 9,
-                marginTop: 7
+                marginTop: 7,
               }}
             >
               {" "}

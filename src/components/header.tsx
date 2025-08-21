@@ -8,7 +8,7 @@ function Header() {
     <View style={styles.header}>
       <View style={styles.titleSection}>
         <Text style={styles.textName}>GULCIN GULCU</Text>
-        <Text style={styles.textTitle}>Frontend Developer</Text>
+        <Text style={styles.textTitle}>Fullstack Developer</Text>
         <View
           style={{
             display: "flex",

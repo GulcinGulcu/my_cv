@@ -9,11 +9,13 @@
   "Context API",
   "Critical Thinking",
   "Cross-functional Collaboration",
+  "CRUD",
   "CSS",
   "CSS3",
   "Design",
   "ES6+",
   "Express.js",
+  "Express",
   "Figma",
   "Frontend Framework",
   "Git",
@@ -28,6 +30,7 @@
   "JSON",
   "Material UI",
   "MongoDB",
+  "mongoose",
   "Next.js",
   "Node.js",
   "npm",
@@ -49,5 +52,6 @@
   "User Interface",
   "UX",
   "VS Code",
-  "Web Accessibility"
+  "Web Accessibility",
+  "Zustand"
 ]
