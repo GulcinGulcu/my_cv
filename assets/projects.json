@@ -1,12 +1,14 @@
 [
-  { "title": "Ecommerce",
-    "link": "https://ecommerce-ea93.onrender.com/",
-    "description": "Live single-domain e-commerce demo Next.js, Express, MongoDB, Zustand, Chakra UI.",
+  { "title": "Lingo",
+    "link": "lingo-vn8u.onrender.com",
+    "description": "Full-stack social platform with authentication, friends system, real-time chat/video, and a responsive themed UI.",
     "bullets": [
-      "Single-domain deployment (UI + API) with clean /api routing and production build scripts.",
-      "CRUD product flows via REST endpoints backed by MongoDB; predictable data model and validations.",
-      "Responsive, accessible UI using Chakra (dialogs, forms, keyboard/focus states).",
-      "Production-readiness: environment variables and error handling."
+      "Node.js and Express single-domain deployment with integrated UI + API, production scripts, and clean routing.",
+      "JWT authentication with protected routes and middleware backed by MongoDB for secure login/signup flows",
+      "Friends system with API-based friend requests, real-time chat, and video calling via Stream SDK.",
+      "Responsive, accessible UI supporting customizable themes with Tailwind/Daisy UI.",
+      "Data reliability via TanStack Query + Axios, custom React hooks, and API testing suite."
+
     ]},
   {
     "title": "Teacher's App",
@@ -14,7 +16,6 @@
     "description": "A platform built primarily in TypeScript and React.",
     "bullets": [
       "Developed a dynamic web platform enabling teachers to manage classrooms, share announcements, assign homework, and access student details.",
-      "Implemented an interactive dashboard that updates in real time with reports on teacher activities and actions.",
       "Managed global application state using Redux and Redux Toolkit; designed authentication flows with Material UI.",
       "Connected to the YouTube API to fetch and display lesson videos seamlessly."
     ]
@@ -25,8 +26,7 @@
     "description": "Private repository - screenshots of the admin panel are available at the provided link. A panel built primarily in TypeScript and NextJS.",
     "bullets": [
       "Developed an admin dashboard with robust features including authentication, user search, and detailed user profile views.",
-      "Implemented data fetching and caching for user details using React Query, improving load times and reducing redundant requests.",
-      "Designed an attractive and accessible UI using Tailwind CSS, Daisy UI and Radix UI, enhancing the overall user experience."
+      "Implemented data fetching and caching for user details using React Query, improving load times and reducing redundant requests."
     ]
   }
 ]

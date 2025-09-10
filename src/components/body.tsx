@@ -25,14 +25,14 @@ function Body() {
             <Text>
               Fullstack Developer with a frontend focus, skilled in <Text style={{ fontWeight: "bold" }}>React.js</Text> / <Text style={{ fontWeight: "bold" }}>Next.js</Text> and building modern, user-friendly interfaces. Experienced with <Text style={{ fontWeight: "bold" }}>Node.js</Text> and <Text style={{ fontWeight: "bold" }}>Express</Text> for backend development, delivering scalable APIs and robust architectures.
             </Text>
-            <Text style={{ fontSize: 9, marginTop: 4}}>→ Fun fact: This CV is also coded with React/PDF renderer.</Text>
+            <Text style={{ fontSize: 9, marginTop: 4}}>→ Fun fact: This CV is also coded by me with React/PDF renderer.</Text>
           </SectionBody>
         </Section>
         <Section>
           <SectionHeader>
             <Text>Projects</Text>
           </SectionHeader>
-          <SectionBody style={{ flexDirection: "column", gap: 16 }}>
+          <SectionBody style={{ flexDirection: "column", gap: 24 }}>
             {projects.map((project, i) => (
               <View key={i} style={{ gap: 4 }}>
                 <SectionSubHeader>
