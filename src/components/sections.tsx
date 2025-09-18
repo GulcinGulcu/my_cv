@@ -56,6 +56,16 @@ export function Section({ children }: SectionProps) {
 
 export function SectionSubHeader({ children }: SectionProps) {
   return (
-    <View style={{ fontSize: 14, fontWeight: "semibold" }}>{children}</View>
+    <View
+      style={{
+        fontSize: 14,
+        fontWeight: "semibold",
+        display: "flex",
+        flexDirection: "row",
+        gap: "12",
+      }}
+    >
+      {children}
+    </View>
   );
 }

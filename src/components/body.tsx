@@ -23,9 +23,17 @@ function Body() {
           </SectionHeader>
           <SectionBody>
             <Text>
-              Fullstack Developer with a frontend focus, skilled in <Text style={{ fontWeight: "bold" }}>React.js</Text> / <Text style={{ fontWeight: "bold" }}>Next.js</Text> and building modern, user-friendly interfaces. Experienced with <Text style={{ fontWeight: "bold" }}>Node.js</Text> and <Text style={{ fontWeight: "bold" }}>Express</Text> for backend development, delivering scalable APIs and robust architectures.
+              Fullstack Developer with a frontend focus, skilled in{" "}
+              <Text style={{ fontWeight: "bold" }}>React.js</Text> /{" "}
+              <Text style={{ fontWeight: "bold" }}>Next.js</Text> and building
+              modern, user-friendly interfaces. Experienced with{" "}
+              <Text style={{ fontWeight: "bold" }}>Node.js</Text> and{" "}
+              <Text style={{ fontWeight: "bold" }}>Express</Text> for backend
+              development, delivering scalable APIs and robust architectures.
             </Text>
-            <Text style={{ fontSize: 9, marginTop: 4}}>→ Fun fact: This CV is also coded by me with React/PDF renderer.</Text>
+            <Text style={{ fontSize: 9, marginTop: 4 }}>
+              → Fun fact: This CV is also coded by me with React/PDF renderer.
+            </Text>
           </SectionBody>
         </Section>
         <Section>
@@ -48,6 +56,20 @@ function Body() {
                     <Text>{project.title}</Text>
                     <ExternalLinkIcon size={15} />
                   </Link>
+                  {project.demo && (
+                    <Link
+                      src={project.demo}
+                      style={{
+                        color: "inherit",
+                        flexDirection: "row",
+                        gap: 3,
+                        alignItems: "center",
+                      }}
+                    >
+                      <Text>Demo</Text>
+                      <ExternalLinkIcon size={15} />
+                    </Link>
+                  )}
                 </SectionSubHeader>
                 <Text>{project.description}</Text>
                 {project.bullets.map((text, i) => (
